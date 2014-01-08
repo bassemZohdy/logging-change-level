@@ -8,12 +8,32 @@
 <title>Logger</title>
 </head>
 <body>
-	<c:forEach items="${loggers}" var="l">
-		<dl>
-			<dt>${l.name}
-			<dt>
-			<dd>${l.level}</dd>
-		</dl>
-	</c:forEach>
+	<table>
+		<thead></thead>
+		<tbody>
+			<c:forEach items="${loggers}" var="l">
+				<tr>
+					<td>${l.name}</td>
+					<td>
+						<form action="loggers" method="post">
+							<input name="logger" type="hidden" value="${l.name}" /> <select
+								name="level">
+								<option value="" label="select" disabled="disabled">
+									<c:forEach items="${levels}" var="level">
+										<c:if test="${l.level == level}">
+											<option value="${level}" label="${level}" selected='selected' />
+										</c:if>
+										<c:if test="${l.level != level}">
+											<option value="${level}" label="${level}" />
+										</c:if>
+									</c:forEach>
+							</select>
+							<button type="submit">Submit</button>
+						</form>
+					</td>
+				</tr>
+			</c:forEach>
+		</tbody>
+	</table>
 </body>
 </html>

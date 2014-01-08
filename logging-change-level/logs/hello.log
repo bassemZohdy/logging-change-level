@@ -1,0 +1,6 @@
+2014-01-08 10:33:14,136 DEBUG [http-bio-8080-exec-3] hello [LoggerController.java:56] DEBUG
+2014-01-08 10:33:14,138 INFO [http-bio-8080-exec-3] hello [LoggerController.java:57] INFO
+2014-01-08 10:33:14,138 WARN [http-bio-8080-exec-3] hello [LoggerController.java:58] WARN
+2014-01-08 10:33:14,139 ERROR [http-bio-8080-exec-3] hello [LoggerController.java:59] ERROR
+2014-01-08 10:33:54,908 ERROR [http-bio-8080-exec-8] hello [LoggerController.java:59] ERROR
+2014-01-08 10:34:23,282 ERROR [http-bio-8080-exec-9] hello [LoggerController.java:59] ERROR
