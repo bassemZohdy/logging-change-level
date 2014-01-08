@@ -25,7 +25,7 @@ public class LoggerController {
 
 	@ModelAttribute("levels")
 	public List<Level> levels() {
-		List<Level> levels = new ArrayList<>();
+		List<Level> levels = new ArrayList<Level>();
 		levels.add(Level.ALL);
 		levels.add(Level.DEBUG);
 		levels.add(Level.ERROR);
